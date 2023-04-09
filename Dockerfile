@@ -1,4 +1,5 @@
 FROM alpine
+COPY . /site
 RUN apk add hugo
-RUN ls
+RUN cd /site
 RUN hugo serve
