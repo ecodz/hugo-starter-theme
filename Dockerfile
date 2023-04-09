@@ -1,4 +1,3 @@
-FROM nginx:alpine
+FROM alpine
 RUN apk add hugo
-RUN hugo
-COPY public /usr/share/nginx/html
+RUN hugo serve
